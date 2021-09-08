@@ -194,7 +194,7 @@
             
           
           哈喽各位，欢迎进入画邴充饥个人站，我是邴邴。
-做这个网站的初衷，主要是在制作视频、查找资料的过程中，发现有不少国外博主除了在各大平台分享旅行经历，还会将之放到自己的个人网站中。相比于发在各大平台，个人网站不仅是一个完全属于自己的空间，也避免了内容因为平台关闭而消失。因此，在浏览了很多博主的个人网站后，我逐渐萌生了制作个人网站的想法。
+做这个网站的起因，主要是在制作视频、查找资料的过程中，发现有不少国外博主除了在各大平台分享旅行经历，还会将之放到自己的个人网站中。相比于发在各大平台，个人网站不仅是一个完全属于自己的空间，也避免了内容因为平台关闭而消失。因此，在浏览了很多博主的个人网站后，我逐渐萌生了制作个人网站的想法。
 我大概是一个行动派，虽然对于建站的各种知识几乎一窍不通，但确认了
         </a>
       </p>
@@ -291,6 +291,39 @@
   
 
   
+<!--《添加网站运行时间 -->
+<!--<br/>-->
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+
+    function createtime() {
+        var grt = new Date("09/04/2021 20:04:44"); //此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime() + 250);
+        days = (now - grt) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if (String(hnum).length == 1) {
+            hnum = "0" + hnum;
+        }
+        minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if (String(mnum).length == 1) {
+            mnum = "0" + mnum;
+        }
+        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if (String(snum).length == 1) {
+            snum = "0" + snum;
+        }
+        document.getElementById("timeDate").innerHTML = " 本站已运行 " + dnum + " 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval("createtime()", 250);
+</script>
+<!-- 添加网站运行时间》 -->
+
 </footer>
 
 

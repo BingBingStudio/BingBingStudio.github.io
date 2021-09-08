@@ -181,7 +181,7 @@
           >
           
             <div class="about-avatar">
-              <img src="/img/avatar.png" srcset="/img/loading.gif" lazyload
+              <img src="/img/avatar.jpg" srcset="/img/loading.gif" lazyload
                    class="img-fluid" alt="avatar">
             </div>
           
@@ -192,47 +192,9 @@
 
 <div class="text-center">
   <div class="about-info">
-    <div class="about-name">Fluid</div>
-    <div class="about-intro">An elegant theme for Hexo</div>
+    <div class="about-name">邴邴</div>
+    <div class="about-intro">拍点照片，做点视频，写点东西</div>
     <div class="about-icons">
-      
-        
-        
-        
-        <a href=https://github.com class="
-           hint--bottom hint--rounded"
-           aria-label=GitHub
-           target="_blank"
-        >
-          <i class="iconfont icon-github-fill" aria-hidden="true"></i>
-          
-        </a>
-      
-        
-        
-        
-        <a href=https://douban.com class="
-           hint--bottom hint--rounded"
-           aria-label=豆瓣
-           target="_blank"
-        >
-          <i class="iconfont icon-douban-fill" aria-hidden="true"></i>
-          
-        </a>
-      
-        
-        
-        
-        <a  class="qr-trigger
-           "
-           
-           target="_self"
-        >
-          <i class="iconfont icon-wechat-fill" aria-hidden="true"></i>
-          
-            <img class="qr-img" src="/img/favicon.png" srcset="/img/loading.gif" lazyload alt="qrcode" />
-          
-        </a>
       
     </div>
   </div>
@@ -240,11 +202,11 @@
 
 <article class="about-content page-content mt-5">
   <div class="markdown-body">
-    <h1 id="关于这个网站"><a href="#关于这个网站" class="headerlink" title="关于这个网站"></a>关于这个网站</h1><h2 id="首先想说的"><a href="#首先想说的" class="headerlink" title="首先想说的"></a>首先想说的</h2><p>没错这是一个个人网站</p>
-<h2 id="这是一个二级标题"><a href="#这是一个二级标题" class="headerlink" title="这是一个二级标题"></a>这是一个二级标题</h2><p>我在学习用markdown语言写文章，看起来如何？</p>
-<h3 id="这是一个三级标题"><a href="#这是一个三级标题" class="headerlink" title="这是一个三级标题"></a>这是一个三级标题</h3><p>听说加三个顿号可以显示命令行</p>
-<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs mel">vs code title: <span class="hljs-keyword">about</span><br><span class="hljs-keyword">date</span>: <span class="hljs-number">2021.09</span><span class="hljs-number">.04</span><br><span class="hljs-keyword">layout</span>: <span class="hljs-keyword">about</span><br></code></pre></td></tr></table></figure>
-
+    <h2 id="🏡-关于本站"><a href="#🏡-关于本站" class="headerlink" title="🏡 关于本站"></a>🏡 关于本站</h2><p>本站是我第一次尝试搭建的个人网站，会将B站的视频内容、平日里拍摄的照片和想法、自己摸索到的教程与相关文件变成图文，在这里更新。</p>
+<p>希望无论何时，进入这个网站的你都能有所收获。</p>
+<h2 id="🚀-在其他平台找到我"><a href="#🚀-在其他平台找到我" class="headerlink" title="🚀 在其他平台找到我"></a>🚀 在其他平台找到我</h2><p>📺哔哩哔哩： <a target="_blank" rel="noopener" href="https://space.bilibili.com/10794511">https://space.bilibili.com/10794511</a></p>
+<p>📸YouTube： <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCI0n0ftdXpT8uTxih98qwOA">https://www.youtube.com/channel/UCI0n0ftdXpT8uTxih98qwOA</a></p>
+<p>🍉西瓜视频： <a target="_blank" rel="noopener" href="https://www.ixigua.com/home/2299768249267720?list_entrance=homepage">https://www.ixigua.com/home/2299768249267720?list_entrance=homepage</a></p>
 
   </div>
 
@@ -324,6 +286,39 @@
   
 
   
+<!--《添加网站运行时间 -->
+<!--<br/>-->
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+
+    function createtime() {
+        var grt = new Date("09/04/2021 20:04:44"); //此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime() + 250);
+        days = (now - grt) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if (String(hnum).length == 1) {
+            hnum = "0" + hnum;
+        }
+        minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if (String(mnum).length == 1) {
+            mnum = "0" + mnum;
+        }
+        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if (String(snum).length == 1) {
+            snum = "0" + snum;
+        }
+        document.getElementById("timeDate").innerHTML = " 本站已运行 " + dnum + " 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval("createtime()", 250);
+</script>
+<!-- 添加网站运行时间》 -->
+
 </footer>
 
 
