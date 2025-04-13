@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>你的名字取景地谷歌地图</title>
+    <link href="/2025/04/13/%E5%85%A8%E6%96%B0%E4%B8%8A%E7%BA%BF%EF%BC%81%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%B7%A1%E7%A4%BC%E7%82%B9%E8%B0%B7%E6%AD%8C%E5%9C%B0%E5%9B%BE/"/>
+    <url>/2025/04/13/%E5%85%A8%E6%96%B0%E4%B8%8A%E7%BA%BF%EF%BC%81%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%B7%A1%E7%A4%BC%E7%82%B9%E8%B0%B7%E6%AD%8C%E5%9C%B0%E5%9B%BE/</url>
+    
+    <content type="html"><![CDATA[<p><img src="/2025/04/13/%E5%85%A8%E6%96%B0%E4%B8%8A%E7%BA%BF%EF%BC%81%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%B7%A1%E7%A4%BC%E7%82%B9%E8%B0%B7%E6%AD%8C%E5%9C%B0%E5%9B%BE/0051904F.png" alt="alt text">试一下能不能把谷歌地图插入到这里，这样的话你们就能更方便地巡礼了。相比于现有的很多取景地整理地图，这份地图更加准确、详细，标出了取景地在电影中出现的时间，还有拍摄的地点和角度。</p><link rel="stylesheet" href="//unpkg.com/hexo-tag-map/lib/leaflet@1.7.1.css"><script data-pjax src="//unpkg.com/hexo-tag-map/lib/leaflet@1.7.1.js"></script><script data-pjax src="//unpkg.com/hexo-tag-map/lib/leaflet.ChineseTmsProviders@1.0.4.js"></script><div class="map-box" style="margin: 0.8rem 0 1.6rem 0;"><div id="map-120.101101-30.239119" style="max-width:100%; height:360px;display: block;margin:0 auto;z-index:1;border-radius: 5px;"></div></div><script type="text/javascript">var normalm=L.tileLayer.chinaProvider('GaoDe.Normal.Map',{maxZoom:20,minZoom:1,attribution:'高德地图'});var imgm=L.tileLayer.chinaProvider('GaoDe.Satellite.Map',{maxZoom:20,minZoom:1,attribution:'高德地图'});var imga=L.tileLayer.chinaProvider('GaoDe.Satellite.Annotion',{maxZoom:20,minZoom:1,attribution:'高德地图'});var normalMap=L.tileLayer.chinaProvider('Google.Normal.Map',{maxZoom:20,minZoom:1,attribution:'Google Maps'}),satelliteMap=L.tileLayer.chinaProvider('Google.Satellite.Map',{maxZoom:21,minZoom:1,attribution:'Google Maps'});routeMap=L.tileLayer.chinaProvider('Google.Satellite.Annotion',{maxZoom:21,minZoom:1});var normalMap=L.tileLayer.chinaProvider('Google.Normal.Map',{maxZoom:21,minZoom:1,attribution:'Google Maps'}),satelliteMap=L.tileLayer.chinaProvider('Google.Satellite.Map',{maxZoom:21,minZoom:1,attribution:'Google Maps'}),routeMap=L.tileLayer.chinaProvider('Google.Satellite.Annotion',{maxZoom:21,minZoom:1,attribution:'Google Maps'});var normalm1=L.tileLayer.chinaProvider('Geoq.Normal.Map',{maxZoom:21,minZoom:1,attribution:'GeoQ'});var normal=L.layerGroup([normalm]),image=L.layerGroup([imgm,imga]);var baseLayers={"高德地图":normal,"智图地图":normalm1,"谷歌地图":normalMap,"高德卫星地图":imgm,"谷歌卫星地图":satelliteMap,"高德卫星标注":image,"谷歌卫星标注":routeMap};var mymap=L.map('map-120.101101-30.239119',{center:[30.239119,120.101101],zoom:15,layers:[normal],zoomControl:false});L.control.layers(baseLayers,null).addTo(mymap);L.control.zoom({zoomInTitle:'放大',zoomOutTitle:'缩小'}).addTo(mymap);var marker = L.marker(['30.239119','120.101101']).addTo(mymap);marker.bindPopup("这里是西湖灵隐寺，据说求姻缘很灵验哦！").openPopup();</script>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World！这里是本网站的起点</title>
     <link href="/2021/09/08/hello_world/"/>
     <url>/2021/09/08/hello_world/</url>
